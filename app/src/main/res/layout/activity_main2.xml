@@ -4,6 +4,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:
     tools:context="com.example.harshkumarbhartiya.tictactoe.Main2Activity">
+
+    <Button
+        android:id="@+id/button24"
+        android:layout_width="118dp"
+        android:layout_height="122dp"
+        tools:layout_editor_absoluteX="256dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="127dp"
+        android:layout_height="122dp"
+        tools:layout_editor_absoluteX="255dp"
+        tools:layout_editor_absoluteY="309dp" />
+
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="117dp"
+        android:layout_height="121dp"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="117dp"
+        android:layout_height="121dp"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="309dp" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="117dp"
+        android:layout_height="121dp"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="309dp" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="117dp"
+        android:layout_height="121dp"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="125dp"
+        android:layout_height="120dp"
+        tools:layout_editor_absoluteX="257dp"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="117dp"
+        android:layout_height="121dp"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="188dp" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="120dp"
+        android:layout_height="123dp"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="186dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="379dp"
+        android:layout_height="491dp"
+        app:srcCompat="@drawable/background"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="-2dp" />
 
 </android.support.constraint.ConstraintLayout>
