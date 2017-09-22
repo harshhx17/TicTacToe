@@ -13,31 +13,31 @@ public class Main2Activity extends AppCompatActivity {
     }
     int flag=1;
     int a[][] = new int[3][3];
-    protected void 1()
+    protected void on1()
     {
 
-    }protected void 2()
+    }protected void on2()
     {
 
-    }protected void 3()
+    }protected void on3()
     {
 
-    }protected void 4()
+    }protected void on4()
     {
 
-    }protected void 5()
+    }protected void on5()
     {
 
-    }protected void 6()
+    }protected void on6()
     {
 
-    }protected void 7()
+    }protected void on7()
     {
 
-    }protected void 8()
+    }protected void on8()
     {
 
-    }protected void 9()
+    }protected void on9()
     {
 
     }

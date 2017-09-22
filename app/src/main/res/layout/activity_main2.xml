@@ -10,7 +10,7 @@
         android:id="@+id/button24"
         android:layout_width="118dp"
         android:layout_height="122dp"
-        android:onClick="6"
+        android:onClick="on6"
         android:visibility="invisible"
         tools:layout_editor_absoluteX="256dp"
         tools:layout_editor_absoluteY="184dp" />
@@ -19,7 +19,7 @@
         android:id="@+id/button23"
         android:layout_width="127dp"
         android:layout_height="122dp"
-        android:onClick="9"
+        android:onClick="on9"
         android:visibility="invisible"
         tools:layout_editor_absoluteX="255dp"
         tools:layout_editor_absoluteY="309dp" />
@@ -28,7 +28,7 @@
         android:id="@+id/button22"
         android:layout_width="117dp"
         android:layout_height="121dp"
-        android:onClick="2"
+        android:onClick="on2"
         android:visibility="invisible"
         tools:layout_editor_absoluteX="134dp"
         tools:layout_editor_absoluteY="55dp" />
@@ -37,7 +37,7 @@
         android:id="@+id/button21"
         android:layout_width="117dp"
         android:layout_height="121dp"
-        android:onClick="8"
+        android:onClick="on8"
         android:visibility="invisible"
         tools:layout_editor_absoluteX="134dp"
         tools:layout_editor_absoluteY="310dp" />
@@ -46,7 +46,7 @@
         android:id="@+id/button20"
         android:layout_width="117dp"
         android:layout_height="121dp"
-        android:onClick="7"
+        android:onClick="on7"
         android:visibility="invisible"
         tools:layout_editor_absoluteX="3dp"
         tools:layout_editor_absoluteY="309dp" />
@@ -55,7 +55,7 @@
         android:id="@+id/button19"
         android:layout_width="117dp"
         android:layout_height="121dp"
-        android:onClick="1"
+        android:onClick="on1"
         android:visibility="invisible"
         tools:layout_editor_absoluteX="3dp"
         tools:layout_editor_absoluteY="55dp" />
@@ -64,7 +64,7 @@
         android:id="@+id/button16"
         android:layout_width="125dp"
         android:layout_height="120dp"
-        android:onClick="3"
+        android:onClick="on3"
         android:visibility="invisible"
         tools:layout_editor_absoluteX="257dp"
         tools:layout_editor_absoluteY="55dp" />
@@ -73,7 +73,7 @@
         android:id="@+id/button14"
         android:layout_width="117dp"
         android:layout_height="121dp"
-        android:onClick="4"
+        android:onClick="on4"
         android:visibility="invisible"
         tools:layout_editor_absoluteX="3dp"
         tools:layout_editor_absoluteY="188dp" />
@@ -82,7 +82,7 @@
         android:id="@+id/button15"
         android:layout_width="120dp"
         android:layout_height="123dp"
-        android:onClick="5"
+        android:onClick="on5"
         android:visibility="invisible"
         tools:layout_editor_absoluteX="129dp"
         tools:layout_editor_absoluteY="186dp" />
