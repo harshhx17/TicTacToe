@@ -13,7 +13,31 @@ public class Main2Activity extends AppCompatActivity {
     }
     int flag=1;
     int a[][] = new int[3][3];
-    protected void onClick()
+    protected void 1()
+    {
+
+    }protected void 2()
+    {
+
+    }protected void 3()
+    {
+
+    }protected void 4()
+    {
+
+    }protected void 5()
+    {
+
+    }protected void 6()
+    {
+
+    }protected void 7()
+    {
+
+    }protected void 8()
+    {
+
+    }protected void 9()
     {
 
     }
