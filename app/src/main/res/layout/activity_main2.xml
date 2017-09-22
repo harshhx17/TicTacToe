@@ -94,5 +94,14 @@
         tools:layout_editor_absoluteX="3dp"
         tools:layout_editor_absoluteY="-2dp" />
 
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="99dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="92dp" />
+
 
 </android.support.constraint.ConstraintLayout>
