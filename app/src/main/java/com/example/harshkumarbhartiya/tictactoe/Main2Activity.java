@@ -1,10 +1,11 @@
 package com.example.harshkumarbhartiya.tictactoe;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.Button;
+
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -15,6 +16,10 @@ public class Main2Activity extends AppCompatActivity {
     }
         int flag=1,i;
     int a[] = new int[9];
+Button button1 = (Button) findViewById(R.id.button1);
+    Button button2 = (Button) findViewById(R.id.button2);
+    Button button3 = (Button) findViewById(R.id.button3);
+    Button button4 = (Button) findViewById(R.id.button4);
     protected void on1()
     {
         i = 0;
@@ -22,11 +27,15 @@ public class Main2Activity extends AppCompatActivity {
         {
             a[i] = 1;
             flag =2;
+              button1.setBackgroundColor(Color.BLUE);
+
         }
         else if(flag == 2&& a[i]==0)
         {
             a[i] = 2;
             flag = 1;
+            button1.setBackgroundColor(Color.RED);
+
         }
         check();
     }protected void on2()
