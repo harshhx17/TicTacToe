@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:
     tools:context="com.example.harshkumarbhartiya.tictactoe.Main2Activity">
 
     <Button
@@ -87,6 +86,13 @@
         android:visibility="invisible"
         tools:layout_editor_absoluteX="129dp"
         tools:layout_editor_absoluteY="186dp" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="379dp"
+        android:layout_height="491dp"
+        app:srcCompat="@drawable/background"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="-2dp" />
 
 
 </android.support.constraint.ConstraintLayout>
