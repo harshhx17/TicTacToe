@@ -23,7 +23,7 @@ public class Main2Activity extends AppCompatActivity {
             a[i] = 1;
             flag =2;
 
-            ((EditText)findViewById(R.id.editText1)).setText("1");
+            ((TextView)findViewById(R.id.editText1)).setText("1");
         }
         else if(flag == 2&& a[i]==0)
         {
