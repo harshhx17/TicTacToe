@@ -13,8 +13,4 @@ public class Main2Activity extends AppCompatActivity {
     }
     int flag=1;
     int a[][] = new int[3][3];
-    protected void onClick()
-    {
-
-    }
 }
