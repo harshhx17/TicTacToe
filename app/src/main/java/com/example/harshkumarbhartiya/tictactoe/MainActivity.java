@@ -1,5 +1,6 @@
 package com.example.harshkumarbhartiya.tictactoe;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -17,7 +18,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void playbutton(View view)
-    {
+    {Intent i= new Intent(this, Main2Activity.class);
+
+        startActivity(i);
 
     }
 

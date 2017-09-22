@@ -10,7 +10,7 @@
         android:id="@+id/playbutton"
         android:layout_width="109dp"
         android:layout_height="151dp"
-        android:onClick="onclick"
+        android:onClick="playbutton"
         android:text="Button"
         tools:layout_editor_absoluteX="245dp"
         tools:layout_editor_absoluteY="163dp" />
