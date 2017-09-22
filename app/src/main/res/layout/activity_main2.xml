@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.harshkumarbhartiya.tictactoe.Main3Activity">
+    tools:context="com.example.harshkumarbhartiya.tictactoe.Main2Activity">
 
     <LinearLayout
         android:layout_width="363dp"
@@ -25,25 +25,52 @@
                 android:id="@+id/button1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="4.5dp"
                 android:layout_weight="0.19"
+                android:background="@android:color/background_light"
                 android:onClick="on1"
-                android:visibility="invisible" />
+                android:padding="10dp"
+                android:paddingBottom="10dp"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:visibility="visible" />
 
             <Button
                 android:id="@+id/button4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="4.5dp"
                 android:layout_weight="0.19"
+                android:background="@android:color/background_light"
                 android:onClick="on4"
-                android:visibility="invisible" />
+                android:padding="10dp"
+                android:paddingBottom="10dp"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:visibility="visible" />
 
             <Button
                 android:id="@+id/button7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="4.5dp"
                 android:layout_weight="0.19"
+                android:background="@android:color/background_light"
                 android:onClick="on7"
-                android:visibility="invisible" />
+                android:padding="10dp"
+                android:paddingBottom="10dp"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:visibility="visible" />
         </LinearLayout>
 
         <LinearLayout
@@ -55,25 +82,52 @@
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="4.5dp"
                 android:layout_weight="0.19"
+                android:background="@android:color/background_light"
                 android:onClick="on2"
-                android:visibility="invisible" />
+                android:padding="10dp"
+                android:paddingBottom="10dp"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:visibility="visible" />
 
             <Button
                 android:id="@+id/button5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="4.5dp"
                 android:layout_weight="0.19"
+                android:background="@android:color/background_light"
                 android:onClick="on5"
-                android:visibility="invisible" />
+                android:padding="10dp"
+                android:paddingBottom="10dp"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:visibility="visible" />
 
             <Button
                 android:id="@+id/button8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="4.5dp"
                 android:layout_weight="0.19"
+                android:background="@android:color/background_light"
                 android:onClick="on8"
-                android:visibility="invisible" />
+                android:padding="10dp"
+                android:paddingBottom="10dp"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:visibility="visible" />
         </LinearLayout>
 
         <LinearLayout
@@ -85,25 +139,52 @@
                 android:id="@+id/button3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="4.5dp"
                 android:layout_weight="0.19"
+                android:background="@android:color/background_light"
                 android:onClick="on3"
-                android:visibility="invisible" />
+                android:padding="10dp"
+                android:paddingBottom="10dp"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:visibility="visible" />
 
             <Button
                 android:id="@+id/button6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="4.5dp"
                 android:layout_weight="0.19"
+                android:background="@android:color/background_light"
                 android:onClick="on6"
-                android:visibility="invisible" />
+                android:padding="10dp"
+                android:paddingBottom="10dp"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:visibility="visible" />
 
             <Button
                 android:id="@+id/button9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="4.5dp"
                 android:layout_weight="0.19"
+                android:background="@android:color/background_light"
                 android:onClick="on9"
-                android:visibility="invisible" />
+                android:padding="10dp"
+                android:paddingBottom="10dp"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:visibility="visible" />
         </LinearLayout>
 
     </LinearLayout>
