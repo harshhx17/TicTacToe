@@ -14,7 +14,7 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
     }
-        int flag=1,i;
+        int flag=1,i,f=0;
     int a[] = new int[9];
 
     protected void on1(View view)
@@ -23,14 +23,14 @@ public class Main2Activity extends AppCompatActivity {
         Button buttn1 = (Button) findViewById(R.id.button1);
         i = 0;
 
-        if(flag == 1&& a[i]==0)
+        if(flag == 1&& a[i]==0&&f==0)
         {
             a[i] = 1;
             flag =2;
               buttn1.setBackgroundColor(Color.BLUE);
 
         }
-        else if(flag == 2&& a[i]==0)
+        else if(flag == 2&& a[i]==0&&f==0)
         {
             a[i] = 2;
             flag = 1;
@@ -42,14 +42,14 @@ public class Main2Activity extends AppCompatActivity {
     { Button buttn2 = (Button) findViewById(R.id.button2);
         i = 1;
 
-        if(flag == 1 && a[i]==0)
+        if(flag == 1 && a[i]==0&&f==0)
         {
             a[i] = 1;
             flag =2;
             buttn2.setBackgroundColor(Color.BLUE);
 
         }
-        else if(flag == 2&& a[i]==0)
+        else if(flag == 2&& a[i]==0&&f==0)
         {
             a[i] = 2;
             flag = 1;
@@ -62,14 +62,14 @@ public class Main2Activity extends AppCompatActivity {
         Button buttn3 = (Button) findViewById(R.id.button3);
         i = 2;
 
-        if(flag == 1 && a[i]==0)
+        if(flag == 1 && a[i]==0&&f==0)
         {
             a[i] = 1;
             flag =2;
             buttn3.setBackgroundColor(Color.BLUE);
 
         }
-        else if(flag == 2&& a[i]==0)
+        else if(flag == 2&& a[i]==0&&f==0)
         {
             a[i] = 2;
             flag = 1;
@@ -81,14 +81,14 @@ public class Main2Activity extends AppCompatActivity {
     {
         Button buttn4 = (Button) findViewById(R.id.button4);
         i = 3;
-        if(flag == 1 && a[i]==0)
+        if(flag == 1 && a[i]==0&&f==0)
         {
             a[i] = 1;
             flag =2;
             buttn4.setBackgroundColor(Color.BLUE);
 
         }
-        else if(flag == 2&& a[i]==0)
+        else if(flag == 2&& a[i]==0&&f==0)
         {
             a[i] = 2;
             flag = 1;
@@ -101,14 +101,14 @@ public class Main2Activity extends AppCompatActivity {
         Button buttn5 = (Button) findViewById(R.id.button5);
         i = 4;
 
-        if(flag == 1 && a[i]==0)
+        if(flag == 1 && a[i]==0&&f==0)
         {
             a[i] = 1;
             flag =2;
             buttn5.setBackgroundColor(Color.BLUE);
 
         }
-        else if(flag == 2&& a[i]==0)
+        else if(flag == 2&& a[i]==0&&f==0)
         {
             a[i] = 2;
             flag = 1;
@@ -120,14 +120,14 @@ public class Main2Activity extends AppCompatActivity {
     { Button buttn6 = (Button) findViewById(R.id.button6);
         i = 5;
 
-        if(flag == 1 && a[i]==0)
+        if(flag == 1 && a[i]==0&&f==0)
         {
             a[i] = 1;
             flag =2;
             buttn6.setBackgroundColor(Color.BLUE);
 
         }
-        else if(flag == 2&& a[i]==0)
+        else if(flag == 2&& a[i]==0&&f==0)
         {
             a[i] = 2;
             flag = 1;
@@ -140,14 +140,14 @@ public class Main2Activity extends AppCompatActivity {
         Button buttn7 = (Button) findViewById(R.id.button7);
         i = 6;
 
-        if(flag == 1 && a[i]==0)
+        if(flag == 1 && a[i]==0&&f==0)
         {
             a[i] = 1;
             flag =2;
             buttn7.setBackgroundColor(Color.BLUE);
 
         }
-        else if(flag == 2&& a[i]==0)
+        else if(flag == 2&& a[i]==0&&f==0)
         {
             a[i] = 2;
             flag = 1;
@@ -160,14 +160,14 @@ public class Main2Activity extends AppCompatActivity {
         Button buttn8 = (Button) findViewById(R.id.button8);
         i = 7;
 
-        if(flag == 1 && a[i]==0)
+        if(flag == 1 && a[i]==0&&f==0)
         {
             a[i] = 1;
             flag =2;
             buttn8.setBackgroundColor(Color.BLUE);
 
         }
-        else if(flag == 2&& a[i]==0)
+        else if(flag == 2&& a[i]==0&&f==0)
         {
             a[i] = 2;
             flag = 1;
@@ -180,14 +180,14 @@ public class Main2Activity extends AppCompatActivity {
         Button buttn9 = (Button) findViewById(R.id.button9);
         i = 8;
 
-        if(flag == 1 && a[i]==0)
+        if(flag == 1 && a[i]==0&&f==0)
         {
             a[i] = 1;
             flag =2;
             buttn9.setBackgroundColor(Color.BLUE);
 
         }
-        else if(flag == 2&& a[i]==0)
+        else if(flag == 2&& a[i]==0&&f==0)
         {
             a[i] = 2;
             flag = 1;
@@ -198,6 +198,7 @@ public class Main2Activity extends AppCompatActivity {
     }
     public  void drawLine(int line, int player)
     {
+        f=1;
         Button buttn1 = (Button) findViewById(R.id.button1);
         Button buttn9 = (Button) findViewById(R.id.button9);
         Button buttn4 = (Button) findViewById(R.id.button4);
