@@ -11,7 +11,7 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
     }
-    int flag=1,i;
+        int flag=1,i;
     int a[] = new int[9];
     protected void on1()
     {
@@ -139,7 +139,7 @@ public class Main2Activity extends AppCompatActivity {
             flag = 1;
         }
     }
-    public  void drawLine(int line)
+    public  void drawLine(int line, int player)
     {
         switch(line)
         {
@@ -153,4 +153,31 @@ public class Main2Activity extends AppCompatActivity {
             case 8:break;
         }
     }
+protected void check()
+{if(a[0]==a[1]&&a[1]==a[2])
+{drawLine(1, a[0]);
 }
+if(a[3]==a[4]&&a[4]==a[5])
+{drawLine(2, a[3]);
+}
+if(a[6]==a[7]&&a[7]==a[8])
+{drawLine(3, a[6]);
+}
+    if(a[0]==a[3]&&a[3]==a[6])
+    {drawLine(4, a[0]);
+    }
+    if(a[1]==a[4]&&a[4]==a[7])
+    {drawLine(5, a[1]);
+    }
+    if(a[2]==a[5]&&a[5]==a[8])
+    {drawLine(6, a[2]);
+    }
+    if(a[0]==a[4]&&a[4]==a[8])
+    {drawLine(7, a[0]);
+    }
+    if(a[2]==a[4]&&a[4]==a[6])
+    {drawLine(8, a[2]);
+    }
+
+
+}}
