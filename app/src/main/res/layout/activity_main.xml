@@ -27,4 +27,26 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="259dp"
+        android:layout_height="66dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="348dp"
+        tools:layout_editor_absoluteX="125dp">
+
+        <RadioButton
+            android:id="@+id/singleplayer"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onRadioButtonClicked"
+            android:text="Singleplayer" />
+
+        <RadioButton android:id="@+id/multiplayer"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:text="Multiplayer"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
 </android.support.constraint.ConstraintLayout>
