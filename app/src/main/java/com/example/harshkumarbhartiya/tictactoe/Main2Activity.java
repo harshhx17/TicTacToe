@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 
 public class Main2Activity extends AppCompatActivity {
@@ -27,14 +28,15 @@ public class Main2Activity extends AppCompatActivity {
         {
             a[i] = 1;
             flag =2;
-              buttn1.setBackgroundColor(Color.BLUE);
+              buttn1.setBackgroundResource(R.drawable.o);
 
         }
         else if(flag == 2&& a[i]==0&&f==0)
         {
             a[i] = 2;
             flag = 1;
-            buttn1.setBackgroundColor(Color.RED);
+            buttn1.setBackgroundResource(R.drawable.x);
+
 
         }
         check();
@@ -46,14 +48,15 @@ public class Main2Activity extends AppCompatActivity {
         {
             a[i] = 1;
             flag =2;
-            buttn2.setBackgroundColor(Color.BLUE);
+            buttn2.setBackgroundResource(R.drawable.o);
+
 
         }
         else if(flag == 2&& a[i]==0&&f==0)
         {
             a[i] = 2;
             flag = 1;
-            buttn2.setBackgroundColor(Color.RED);
+            buttn2.setBackgroundResource(R.drawable.x);
 
         }
         check();
@@ -66,14 +69,14 @@ public class Main2Activity extends AppCompatActivity {
         {
             a[i] = 1;
             flag =2;
-            buttn3.setBackgroundColor(Color.BLUE);
+            buttn3.setBackgroundResource(R.drawable.o);
 
         }
         else if(flag == 2&& a[i]==0&&f==0)
         {
             a[i] = 2;
             flag = 1;
-            buttn3.setBackgroundColor(Color.RED);
+            buttn3.setBackgroundResource(R.drawable.x);
 
         }
         check();
@@ -85,14 +88,14 @@ public class Main2Activity extends AppCompatActivity {
         {
             a[i] = 1;
             flag =2;
-            buttn4.setBackgroundColor(Color.BLUE);
+            buttn4.setBackgroundResource(R.drawable.o);
 
         }
         else if(flag == 2&& a[i]==0&&f==0)
         {
             a[i] = 2;
             flag = 1;
-            buttn4.setBackgroundColor(Color.RED);
+            buttn4.setBackgroundResource(R.drawable.x);
 
         }
         check();
@@ -105,14 +108,14 @@ public class Main2Activity extends AppCompatActivity {
         {
             a[i] = 1;
             flag =2;
-            buttn5.setBackgroundColor(Color.BLUE);
+            buttn5.setBackgroundResource(R.drawable.o);
 
         }
         else if(flag == 2&& a[i]==0&&f==0)
         {
             a[i] = 2;
             flag = 1;
-            buttn5.setBackgroundColor(Color.RED);
+            buttn5.setBackgroundResource(R.drawable.x);
 
         }
         check();
@@ -124,14 +127,14 @@ public class Main2Activity extends AppCompatActivity {
         {
             a[i] = 1;
             flag =2;
-            buttn6.setBackgroundColor(Color.BLUE);
+            buttn6.setBackgroundResource(R.drawable.o);
 
         }
         else if(flag == 2&& a[i]==0&&f==0)
         {
             a[i] = 2;
             flag = 1;
-            buttn6.setBackgroundColor(Color.RED);
+            buttn6.setBackgroundResource(R.drawable.x);
 
         }
         check();
@@ -144,14 +147,14 @@ public class Main2Activity extends AppCompatActivity {
         {
             a[i] = 1;
             flag =2;
-            buttn7.setBackgroundColor(Color.BLUE);
+            buttn7.setBackgroundResource(R.drawable.o);
 
         }
         else if(flag == 2&& a[i]==0&&f==0)
         {
             a[i] = 2;
             flag = 1;
-            buttn7.setBackgroundColor(Color.RED);
+            buttn7.setBackgroundResource(R.drawable.x);
 
         }
         check();
@@ -164,14 +167,14 @@ public class Main2Activity extends AppCompatActivity {
         {
             a[i] = 1;
             flag =2;
-            buttn8.setBackgroundColor(Color.BLUE);
+            buttn8.setBackgroundResource(R.drawable.o);
 
         }
         else if(flag == 2&& a[i]==0&&f==0)
         {
             a[i] = 2;
             flag = 1;
-            buttn8.setBackgroundColor(Color.RED);
+            buttn8.setBackgroundResource(R.drawable.x);
 
         }
         check();
@@ -184,14 +187,14 @@ public class Main2Activity extends AppCompatActivity {
         {
             a[i] = 1;
             flag =2;
-            buttn9.setBackgroundColor(Color.BLUE);
+            buttn9.setBackgroundResource(R.drawable.o);
 
         }
         else if(flag == 2&& a[i]==0&&f==0)
         {
             a[i] = 2;
             flag = 1;
-            buttn9.setBackgroundColor(Color.RED);
+            buttn9.setBackgroundResource(R.drawable.x);
 
         }
         check();
@@ -208,7 +211,11 @@ public class Main2Activity extends AppCompatActivity {
         Button buttn6 = (Button) findViewById(R.id.button6);
         Button buttn7 = (Button) findViewById(R.id.button7);
         Button buttn8 = (Button) findViewById(R.id.button8);
-
+        TextView text = (TextView)findViewById(R.id.textView);
+        if(player==1)
+        {text.setText("O WINS");}
+        else if (player==2)
+        {text.setText("X WINS");}
         switch(line)
         {
             case 1:buttn1.setBackgroundColor(Color.MAGENTA);
