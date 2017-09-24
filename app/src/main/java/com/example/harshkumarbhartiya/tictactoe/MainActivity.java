@@ -16,27 +16,32 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
+int flag=1;
     protected void onRadioButtonClicked(View view) {
         boolean checked = ((RadioButton) view).isChecked();
 
         switch(view.getId()) {
             case R.id.singleplayer:
                 if (checked)
-                {Intent i= new Intent(this, Main3Activity.class);
-
-                    startActivity(i);}
+                {flag=1;}
 
 
                     break;
             case R.id.multiplayer:
                 if (checked)
-                {Intent i= new Intent(this, Main2Activity.class);
-
-                startActivity(i);}
+                {flag=2;}
                 break;
         }
 
 
     }
-    }
+    protected void playbutton(View view)
+    {if (flag==1)
+    {Intent i= new Intent(this, Main3Activity.class);
+
+    startActivity(i);}
+    else if (flag==2)
+    {Intent i= new Intent(this, Main2Activity.class);
+
+    startActivity(i); }
+}}
