@@ -16,7 +16,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-int flag=1;
+int flag=1, var=1;
+    String so="8";
     protected void onRadioButtonClicked(View view) {
         boolean checked = ((RadioButton) view).isChecked();
 
@@ -35,13 +36,26 @@ int flag=1;
 
 
     }
+    protected void Difficulty(View view)
+    {boolean checked = ((RadioButton) view).isChecked();
+        switch (view.getId())
+        {case R.id.easy:
+            if(checked){var=1; }
+            case R.id.difficult:
+                if(checked){
+                    var=2;
+                }
+        }
+
+    }
     protected void playbutton(View view)
     {if (flag==1)
-    {Intent i= new Intent(this, Main3Activity.class);
-
-    startActivity(i);}
+    {Intent intent = new Intent(this,Main3Activity.class);
+        intent.putExtra("TextToGive", var);
+        startActivity(intent);}
     else if (flag==2)
     {Intent i= new Intent(this, Main2Activity.class);
 
-    startActivity(i); }
+
+        startActivity(i); }
 }}
