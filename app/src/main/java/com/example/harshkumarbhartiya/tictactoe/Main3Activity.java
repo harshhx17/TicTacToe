@@ -16,7 +16,7 @@ public class Main3Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
-        int z = getIntent().getIntExtra("TextToGive", 1); //Place breakpoint here notice that it contains information.
+        int z = getIntent().getIntExtra("TextToGive", 1); 
     g=z;}
 
     int f=0;
