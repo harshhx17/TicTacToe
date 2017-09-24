@@ -19,40 +19,41 @@ public class Main3Activity extends AppCompatActivity {
  int f=0;
     int[] a= new int[9];
 protected void on1(View view){
-    buttonclick(0, 1);
-    computerchance();
+    if(a[0]==0){buttonclick(0, 1);
+    computerchance();}
     }
     protected void on2(View view){
-        buttonclick(1, 1);
-        computerchance();
-    }
+        if(a[1]==0) {
+            buttonclick(1, 1);
+            computerchance();
+        }}
     protected void on3(View view){
-        buttonclick(2, 1);
+        if(a[2]==0){buttonclick(2, 1);
         computerchance();
-    }
+    }}
     protected void on4(View view){
-        buttonclick(3, 1);
-        computerchance();
+        if(a[3]==0){buttonclick(3, 1);
+        computerchance();}
     }
     protected void on5(View view){
-        buttonclick(4, 1);
-        computerchance();
+        if(a[4]==0) {buttonclick(4, 1);
+        computerchance();}
     }
     protected void on6(View view){
-        buttonclick(5, 1);
-        computerchance();
+        if(a[5]==0){ buttonclick(5, 1);
+        computerchance();}
     }
     protected void on7(View view){
-        buttonclick(6, 1);
-        computerchance();
+        if(a[6]==0) {buttonclick(6, 1);
+        computerchance();}
     }
     protected void on8(View view){
-        buttonclick(7, 1);
-        computerchance();
+        if(a[7]==0){buttonclick(7, 1);
+        computerchance();}
     }
     protected void on9(View view){
-        buttonclick(8, 1);
-        computerchance();
+        if(a[8]==0){buttonclick(8, 1);
+        computerchance();}
     }
 
     protected void computerchance(){
