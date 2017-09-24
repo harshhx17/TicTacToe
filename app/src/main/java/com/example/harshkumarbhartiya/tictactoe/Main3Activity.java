@@ -55,17 +55,17 @@ protected void on1(View view){
     }
 
     protected void computerchance(){
-        Random rn = new Random();
-        int i= rn.nextInt(8);
-        if(a[i]==0)
-        {buttonclick(i, 2);
+        if(a[0]==0||a[1]==0||a[2]==0||a[3]==0||a[4]==0||a[5]==0||a[6]==0||a[7]==0||a[8]==0) {
+            Random rn = new Random();
+            int i = rn.nextInt(8);
+            if (a[i] == 0) {
+                buttonclick(i, 2);
 
 
-        }
-        else {
-            computerchance();
-        }
-    }
+            } else {
+                computerchance();
+            }
+        }    }
     protected void buttonclick(int l, int m) {
         Button buttn1 = (Button) findViewById(R.id.button1);
         Button buttn9 = (Button) findViewById(R.id.button9);
@@ -166,26 +166,29 @@ protected void on1(View view){
         if(a[3]==a[4]&&a[4]==a[5]&&a[3]!=0)
         {drawLine(2, a[3]);
         }
-        if(a[6]==a[7]&&a[7]==a[8]&&a[6]!=0)
+        else if(a[6]==a[7]&&a[7]==a[8]&&a[6]!=0)
         {drawLine(3, a[6]);
         }
-        if(a[0]==a[3]&&a[3]==a[6]&&a[0]!=0)
+        else if(a[0]==a[3]&&a[3]==a[6]&&a[0]!=0)
         {drawLine(4, a[0]);
         }
-        if(a[1]==a[4]&&a[4]==a[7]&&a[4]!=0)
+        else if(a[1]==a[4]&&a[4]==a[7]&&a[4]!=0)
         {drawLine(5, a[1]);
         }
-        if(a[2]==a[5]&&a[5]==a[8]&&a[5]!=0)
+        else if(a[2]==a[5]&&a[5]==a[8]&&a[5]!=0)
         {drawLine(6, a[2]);
         }
-        if(a[0]==a[4]&&a[4]==a[8]&&a[8]!=0)
+        else if(a[0]==a[4]&&a[4]==a[8]&&a[8]!=0)
         {drawLine(7, a[0]);
         }
-        if(a[2]==a[4]&&a[4]==a[6]&&a[4]!=0)
+        else if(a[2]==a[4]&&a[4]==a[6]&&a[4]!=0)
         {drawLine(8, a[2]);
         }
+else if(!(a[0]==0||a[1]==0||a[2]==0||a[3]==0||a[4]==0||a[5]==0||a[6]==0||a[7]==0||a[8]==0))
+{TextView text = (TextView)findViewById(R.id.textView);
+    text.setText("Game Is TIE!");
 
-    }
+}   }
     public  void drawLine(int line, int player)
     {
         f=1;
@@ -200,9 +203,9 @@ protected void on1(View view){
         Button buttn8 = (Button) findViewById(R.id.button8);
         TextView text = (TextView)findViewById(R.id.textView);
         if(player==1)
-        {text.setText("O WINS");}
+        {text.setText("O WINS!");}
         else if (player==2)
-        {text.setText("X WINS");}
+        {text.setText("X WINS!");}
         switch(line)
         {
             case 1:buttn1.setBackgroundColor(Color.MAGENTA);
