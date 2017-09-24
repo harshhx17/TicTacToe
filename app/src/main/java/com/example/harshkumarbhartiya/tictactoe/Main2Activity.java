@@ -1,8 +1,10 @@
 package com.example.harshkumarbhartiya.tictactoe;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Layout;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -15,7 +17,7 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
     }
-        int flag=1,i,f=0;
+        int flag=1,i,f=0, flag2=0;
     int a[] = new int[9];
 
     protected void on1(View view)
@@ -213,9 +215,15 @@ public class Main2Activity extends AppCompatActivity {
         Button buttn8 = (Button) findViewById(R.id.button8);
         TextView text = (TextView)findViewById(R.id.textView);
         if(player==1)
-        {text.setText("O WINS!");}
+        {text.setText("O WINS!");
+            text.setTextColor(Color.RED);
+            View lay = findViewById(R.id.layou);
+            lay.setBackgroundColor(Color.CYAN);}
         else if (player==2)
-        {text.setText("X WINS!");}
+        {text.setText("X WINS!");
+            text.setTextColor(Color.RED);
+            View lay = findViewById(R.id.layou);
+            lay.setBackgroundColor(Color.CYAN);}
         switch(line)
         {
             case 1:buttn1.setBackgroundColor(Color.MAGENTA);
@@ -250,6 +258,7 @@ public class Main2Activity extends AppCompatActivity {
                 buttn3.setBackgroundColor(Color.MAGENTA);
                 buttn5.setBackgroundColor(Color.MAGENTA);break;
         }
+
     }
 protected void check()
 {if(a[0]==a[1]&&a[1]==a[2]&&a[0]!=0)
@@ -279,7 +288,23 @@ else if(a[6]==a[7]&&a[7]==a[8]&&a[6]!=0)
    else if(!(a[0]==0||a[1]==0||a[2]==0||a[3]==0||a[4]==0||a[5]==0||a[6]==0||a[7]==0||a[8]==0))
     {TextView text = (TextView)findViewById(R.id.textView);
         text.setText("Game Is TIE!");
-
+        text.setTextSize(35);
+    text.setTextColor(Color.RED);
+        View lay = findViewById(R.id.layou);
+    lay.setBackgroundColor(Color.CYAN);
     }
 
-}}
+}
+protected void replay(View view)
+{
+recreate();
+
+
+
+}
+    protected void menu(View view)
+    {
+        Intent i= new Intent(this, MainActivity.class);
+        startActivity(i);
+    }
+}

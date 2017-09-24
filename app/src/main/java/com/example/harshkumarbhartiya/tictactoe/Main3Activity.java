@@ -1,5 +1,6 @@
 package com.example.harshkumarbhartiya.tictactoe;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -187,6 +188,11 @@ protected void on1(View view){
 else if(!(a[0]==0||a[1]==0||a[2]==0||a[3]==0||a[4]==0||a[5]==0||a[6]==0||a[7]==0||a[8]==0))
 {TextView text = (TextView)findViewById(R.id.textView);
     text.setText("Game Is TIE!");
+    text.setTextSize(35);
+    text.setTextColor(Color.RED);
+    View lay = findViewById(R.id.layou);
+    lay.setBackgroundColor(Color.CYAN);
+
 
 }   }
     public  void drawLine(int line, int player)
@@ -203,9 +209,15 @@ else if(!(a[0]==0||a[1]==0||a[2]==0||a[3]==0||a[4]==0||a[5]==0||a[6]==0||a[7]==0
         Button buttn8 = (Button) findViewById(R.id.button8);
         TextView text = (TextView)findViewById(R.id.textView);
         if(player==1)
-        {text.setText("O WINS!");}
+        {text.setText("O WINS!");
+            text.setTextColor(Color.RED);
+            View lay = findViewById(R.id.layou);
+            lay.setBackgroundColor(Color.CYAN);}
         else if (player==2)
-        {text.setText("X WINS!");}
+        {text.setText("X WINS!");
+            text.setTextColor(Color.RED);
+            View lay = findViewById(R.id.layou);
+            lay.setBackgroundColor(Color.CYAN);}
         switch(line)
         {
             case 1:buttn1.setBackgroundColor(Color.MAGENTA);
@@ -240,4 +252,17 @@ else if(!(a[0]==0||a[1]==0||a[2]==0||a[3]==0||a[4]==0||a[5]==0||a[6]==0||a[7]==0
                 buttn3.setBackgroundColor(Color.MAGENTA);
                 buttn5.setBackgroundColor(Color.MAGENTA);break;
         }
-    }}
+    }
+    protected void replay(View view)
+    {
+     recreate();
+
+
+
+    }
+    protected void menu(View view)
+    {
+        Intent i= new Intent(this, MainActivity.class);
+        startActivity(i);
+    }
+}
