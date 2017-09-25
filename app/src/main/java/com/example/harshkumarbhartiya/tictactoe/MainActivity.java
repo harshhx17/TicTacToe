@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-int flag=1, var=1;
+int flag=1, var=0;
     String so="8";
     protected void onRadioButtonClicked(View view) {
         boolean checked = ((RadioButton) view).isChecked();

@@ -64,7 +64,8 @@ protected void on1(View view){
     protected void computerchance(){
         if(a[0]==0||a[1]==0||a[2]==0||a[3]==0||a[4]==0||a[5]==0||a[6]==0||a[7]==0||a[8]==0) {
            int mark=1;
-            if(g==1||g==2){
+            if(g==1||g==2)
+            {
             for(int i=0; i<3; i++)
             {if(((a[3*i]==2&&a[3*i+1]==2)||(a[3*i]==1&&a[3*i+1]==1))&&mark==1&&a[3*i+2]==0){buttonclick(3*i+2, 2);
             mark=0;}
@@ -84,15 +85,9 @@ for(int j=0; j<3; j++)
             if(((a[2]==2&&a[4]==2)||(a[2]==1&&a[4]==1))&&mark==1&&a[6]==0){buttonclick(6, 2); mark=0;}
             if(((a[6]==2&&a[4]==2)||(a[6]==1&&a[4]==1))&&mark==1&&a[2]==0){buttonclick(2, 2); mark=0;}
             if(((a[2]==2&&a[6]==2)||(a[2]==1&&a[6]==1))&&mark==1&&a[4]==0){buttonclick(4, 2); mark=0;}
-
-if(((a[0]==1||a[8]==1)&&a[4]==0)&&mark==1&&g==2){
-    buttonclick(4, 2);
-mark=0;}
+if(((a[0]==1||a[8]==1)&&a[4]==0)&&mark==1&&g==2){buttonclick(4, 2); mark=0;}
             if(((a[4]==1)&&(a[0]==0&&a[1]==0&&a[2]==0&&a[3]==0&&a[5]==0&&a[6]==0&&a[7]==0&&a[8]==0))&&g==2&&mark==1)
-            {buttonclick(0, 2);
-                mark=0;
-
-            }}
+            {buttonclick(0, 2);mark=0;}}
             if(mark==1){
                Random rn = new Random();
                int i = rn.nextInt(8);
