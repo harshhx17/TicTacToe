@@ -22,7 +22,7 @@ int flag=1, var=1;
         boolean checked = ((RadioButton) view).isChecked();
 
         switch(view.getId()) {
-            case R.id.singleplayer:
+                        case R.id.singleplayer:
                 if (checked)
                 {flag=1;}
 
@@ -40,11 +40,13 @@ int flag=1, var=1;
     {boolean checked = ((RadioButton) view).isChecked();
         switch (view.getId())
         {case R.id.easy:
-            if(checked){var=1; }
+            if(checked){var=0; } break;
+            case R.id.medium:
+                if(checked){var=1;} break;
             case R.id.difficult:
                 if(checked){
                     var=2;
-                }
+                }break;
         }
 
     }
